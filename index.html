@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🦁</text></svg>">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <title>Piano Simulator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Animal Piano</h2>
+            <div class="column volume-slider">
+                <span>Volume</span><input type="range"
+                min="0"
+                max="1"
+                value="0.5"
+                step="any">
+            </div>
+            <div class="column keys-check">
+                <span>Teclas</span><input type="checkbox" checked>
+            </div>
+        </header>
+        <ul class="piano-keys">
+            <li class="key white" data-key="🦁"><span>🦁</span></li>
+            <li class="key black" data-key="🦆"><span>🦆</span></li>
+            <li class="key white" data-key="🐯"><span>🐯</span></li>
+            <li class="key black" data-key="🐊"><span>🐊</span></li>
+            <li class="key white" data-key="🐮"><span>🐮</span></li>
+            <li class="key black" data-key="🐵"><span>🐵</span></li>
+            <li class="key white" data-key="🦅"><span>🦅</span></li>
+            <li class="key black" data-key="🦉"><span>🦉</span></li>
+            <li class="key white" data-key="🐶"><span>🐶</span></li>
+            <li class="key black" data-key="🐔"><span>🐔</span></li>
+            <li class="key white" data-key="🐺"><span>🐺</span></li>
+            <li class="key black" data-key="🐷"><span>🐷</span></li>
+            <li class="key white" data-key="🐱"><span>🐱</span></li>
+            <li class="key black" data-key="🐴"><span>🐴</span></li>
+            <li class="key white" data-key="🐸"><span>🐸</span></li>
+            <li class="key black" data-key="🐬"><span>🐬</span></li>
+            <li class="key white" data-key="🦃"><span>🦃</span></li>
+        </ul>
+    </div>
+
+    <script defer src="src/scripts/engine.js"></script>
+</body>
+</html>
